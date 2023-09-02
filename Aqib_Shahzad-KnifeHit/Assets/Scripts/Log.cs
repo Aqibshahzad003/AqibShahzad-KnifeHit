@@ -34,5 +34,7 @@ public class Log : MonoBehaviour
         isReversing = true;
         yield return new WaitForSeconds(4f);//and changing it to false after 4 sec after it is set to true
         isReversing = false;
+
+        StartCoroutine(ChangeRotation()); //repeat process
     }
 }
